@@ -9,7 +9,10 @@ salary ： 薪资（数字，2位小数点）
 上述4个XXX请以变量代替，并拼接为字符串后通过print输出
 """
 money = 100000
-salary = 15000
+salary = 15000.00
 name =  '虞姬'
-info = "我是" + name + ",钱包有" + str(money) + "元，但是今天发放了工资" + str(salary) +"元，目前钱包有" + str(salary + money) + "元。"
+# 扩展语法：()表示内部的内容是整体，哪怕换行也是整体。
+info = ("我是" + name + ",钱包有" + str(money) +
+        "元，但是今天发放了工资" + str(salary) +
+        "元，目前钱包有" + str(salary + money) + "元。")
 print(info)
