@@ -11,6 +11,6 @@ salary ： 薪资（数字，2位小数点）
 name = "虞姬"
 money = 100000
 salary = 15000.72
-# %.1f代表小数后一位，%.2f代表小数后2位，四舍五入的
+# %.1f代表小数后一位，%.2f代表小数后2位，四舍五入的  在python种，浮点数默认小数点后六位
 info = "我是%s，钱包有%d元，但是今天发放了工资%.2f元，目前钱包有%.2f元" % (name,money,salary,money + salary)
 print(info)
