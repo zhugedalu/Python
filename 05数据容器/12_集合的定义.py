@@ -18,5 +18,41 @@ nums2 = set()        # 注意空集合是set()   空列表[]  空元组() 空字
 print(nums2,type(nums2))
 
 # 去重且无序
+# 因为要对元素做去重处理，所以无法保证顺序和创建时一致
 set1 = {"bbb","bbb","aaa","cccc"}
 print(set1)
+
+# 下标访问,无法使用
+# print(set1[2])
+
+my_set = {"c","a","b","c"}
+# 集合和列表一样，允许修改
+# 1.add,向集合添加一个元素
+my_set.add("d")
+print(my_set)
+
+# remove(元素)，移除指定元素
+my_set.remove("d")
+print(my_set)
+
+# pop() 随机取出一个元素返回，此元素在集合内被删除
+print(my_set.pop())     # 是随机取出一个元素，而不是给出指定元素
+print(my_set)
+
+# 清空集合 clear()
+my_set.clear()
+# 方式 2 ：my_set = set()
+print(my_set)
+
+# 2个集合的差集
+set1 = {1,2,3}
+set2 = {1,4,5}
+# 集合1.difference(集合2)  取差集，集合1有而集合2没有的
+# 结果是组成一个新集合返回，原有的集合1和集合2不变
+set3 = set1.difference(set2)
+print("差集结果：",set3)
+print("原有集合：set1：",set1)
+print("原有集合：set2：",set2)
+
+set4 = set2.difference(set1)
+print(set4)
