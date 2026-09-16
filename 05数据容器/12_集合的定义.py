@@ -56,3 +56,39 @@ print("原有集合：set2：",set2)
 
 set4 = set2.difference(set1)
 print(set4)
+
+# 两个集合的差集消除
+# set1.difference_update(set2)
+# 在set1内，删除和set2相同的元素
+# 结果：set1被修改 set2不变
+set1.difference_update(set2)
+print("原有集合：set1：",set1)
+print("原有集合：set2：",set2)
+
+# 两个集合的并集 合并
+# set1.union(set2) 2个集合合并为1个
+# 结果：原有集合set1、set2不变，得到新集合
+set5 = set1.union(set2)
+print("原有集合：set1：",set1)
+print("原有集合：set2：",set2)
+print("合并后新集合：",set5)          # 重复元素会消除掉
+
+my_set = {"c","a","b","c"}
+# 统计元素数量  len(集合)
+print(len(my_set))          # 去重后结果为3
+
+# 因为集合支持下标，所以集合不支持while循环
+# 支持for循环遍历
+# 遍历集合
+for i in my_set:
+    print(i)        # 打印出来的顺序未知，不确定顺序
+
+"""
+集合有如下特点：
+1. 可以容纳多个数据
+2. 可以容纳不同类型的数据（混装）
+3. 数据是无序存储的（不支持下标索引）
+4. 不允许重复数据存在
+5. 可以修改（增加或删除元素等）
+6. 支持for循环
+"""
