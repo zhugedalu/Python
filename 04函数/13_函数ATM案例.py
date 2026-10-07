@@ -68,6 +68,9 @@ while True:
         break
 
 
+# 总结：四个函数的封装
+
+
 
 
 

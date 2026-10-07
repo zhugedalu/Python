@@ -1,6 +1,6 @@
 # while循环
 print("-------while循环--------")
-t1 = (1,2,3,4,5,6,7)
+t1 = (1,2,3,4,5,6,7,1)
 index = 0
 while index < len(t1):
     print(t1[index])
